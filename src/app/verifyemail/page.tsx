@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
-const verifyEmail = () => {
+export default function verifyEmail(){
   const router = useRouter();
   const [token, setToken] = React.useState("");
   const [type, setType] = React.useState("");
@@ -52,4 +52,3 @@ const verifyEmail = () => {
   );
 };
 
-export default verifyEmail;
