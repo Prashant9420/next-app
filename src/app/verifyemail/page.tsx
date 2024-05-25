@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
-export default function verifyEmail(){
+export default function VerifyEmail(){
   const router = useRouter();
   const [token, setToken] = React.useState("");
   const [type, setType] = React.useState("");
